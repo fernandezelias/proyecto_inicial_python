@@ -26,7 +26,7 @@ def pedir_letra(letras_usadas):
     letra = str(input('Ingrese una nueva letra: ').lower())
     while True:           
         if len(letra) > 1:
-            print('¡Error! Ingresó más de un caracter: debe ingresar una solo letra.')
+            print('¡Error! Ingresó más de un caracter: debe ingresar una sola letra.')
         elif letra in letras_usadas:
             print(f'La letra "{letra}" ya ha sido ingresada.')
         elif letra.isalpha() == False:
